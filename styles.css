@@ -1,95 +1,145 @@
 body{
-  background: black;
+   background: #9178AC;
 }
 
-.container{
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  height: 200px;
-}
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+  }
 
-.bump{
-  position: absolute;
-  width: 180px;
-  height: 220px;
-  left:-18px;
-  background: linear-gradient(0deg, rgba(152,68,183,1) 0%,#EC4C35 25%, #F2AB1D 51%, #E67F21 100%);
-  border-radius: 100%;
-  z-index: 3;
-  box-shadow:         inset 0 0 2px #5a3b0c44;
+  .hair{
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    left: 100px;
+    top: -13px;
+    border-radius: 100%;
+    background: rgba(243, 45, 45, .985);
+    transform: rotate(20deg);
+  }
 
-
-}
-
-.bump.left{
- left: 70px;
- width: 120px;
- height: 200px;
- z-index: 2;
- box-shadow:         inset 0 0 2px #5a3b0c44;
-}
-
-.bump.right{
-  left: -50px;
-  width: 120px;
-  height: 200px;
-  z-index: 2;
-  box-shadow:         inset 0 0 2px #5a3b0c44;
- }
-
- .bump.three{
-   top: 45px;
-  left: -70px;
-  width: 100px;
-  height: 120px;
-  z-index: 1;
-  box-shadow:         inset 0 0 8px #181717b4;
- }
-
- .bump.four{
-  top: 45px;
-  left: 105px;
-  width: 100px;
-  height: 120px;
-  z-index: 1;
-  box-shadow:         inset 0 0 8px #181717b4;
- }
-
- .stem{
-  position: absolute;
-  width: 15px;
-  height: 30px;
-  top:-20px;
-  left: 63px;
-  background: green;
-  z-index:1;
-  border-radius: 20%;
-  box-shadow:  inset 8px 6px -6px  black;
- }
-
- .dot{
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top:20px;
-  left: 100px;
-  background: rgba(255, 255, 255, 0.904);
-  border-radius: 100%;
-  z-index:4;
- }
-
- .dot.two{
+.hair:before{
+  content:"";
   position: absolute;
   width: 10px;
-  height: 10px;
-  top:30px;
-  left: 120px;
-  background:  rgba(255, 255, 255, 0.904);
+  height: 18px;
+  top: 3px;
+  left: -8px;
   border-radius: 100%;
-  z-index:4;
- }
+  background:rgba(243, 45, 45, .985);
+  transform: rotate(-30deg);
+}
+
+  .wing1{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    left: -20px;
+    top: 100px;
+    background: rgb(249, 250, 172);
+    border-radius: 80% 80% 80% 150%;
+    transform: rotate(35deg);
+  }
+
+  .wing2{
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    left: 191px;
+    top: 100px;
+    background: rgb(249, 250, 172);
+    border-radius: 80% 80% 150% 80%;
+    transform: rotate(-35deg);
+  }
+
+.body{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgb(249, 250, 172);
+  border-radius: 100% 100% 70% 70%;
+}
+
+  .beak{
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 89px;
+    top: 90px;
+    border-radius: 50%;
+    border-left: 12px solid transparent;
+    border-right:12px solid transparent;
+    border-top: 20px solid rgb(238, 190, 101);
+  }
+
+  .eye1{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 32px;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+  }
+
+  .eye2{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 155px;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 100%;
+  }
+
+  .leg{
+    position: absolute;
+    top: 195px;
+    left: 55px;
+    width: 8px;
+    height: 25px;
+    background: rgb(238, 190, 101);
+    border-radius: 10px;
+  }
+
+  .leg:before{
+    content:"";
+    position: absolute;
+    top: 0px;
+    left: 85px;
+    width: 8px;
+    height: 25px;
+    background: rgb(238, 190, 101);
+    border-radius: 10px;
+  }
+
+  .feet{
+    position: absolute;
+    top: 213px;
+    left: 55px;
+    width: 15px;
+    height: 8px;
+    background: rgb(238, 190, 101);
+    border-radius: 10px;
+    transform: rotate(10deg);
+    box-shadow: -11px 6px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .feet:before{
+    content:"";
+    position: absolute;
+    top: -15px;
+    left: 84px;
+    width: 15px;
+    height: 8px;
+    background: rgb(238, 190, 101);
+    border-radius: 10px;
+    box-shadow: -11px 6px 10px rgba(0, 0, 0, 0.6);
+  }
+
