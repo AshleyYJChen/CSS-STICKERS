@@ -1,10 +1,8 @@
 body{
-  /*background: #FCF7C9;*/
-  background: #88E8BA;
-  
+  background: black;
 }
 
-.container {
+.container{
   position: absolute;
   margin: auto;
   top: 0;
@@ -15,204 +13,83 @@ body{
   height: 200px;
 }
 
-.body{
-  position: absolute;
-  width: 160px;
-  height: 220px;
-  top: -80px;
-  background:#FF8478;
-  border-radius:  90% 90% 100% 100%;
-}
-
-.bottom{
-  position: absolute;
-  width: 0;
-  height: 0;
-  left:-1px;
-  top:65px;
-  border-radius: 50%;
-  border-left: 81px solid transparent;
-  border-right:81px solid transparent;
-  border-top: 150px solid #FF8478;
-
-
-}
-
-
-.shadow{
-  position: absolute;
-  width: 80px;
-  height: 220px;
-  left: 80px;
-  top: -80px;
-  border-radius: 88% / 47%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  background: #D74462;
-}
-
-.rim{
+.bump{
   position: absolute;
   width: 180px;
-  height: 23px;
-  left: -8px;
-  top:120px;
-  background: #996054;
-  box-shadow: -10px 0 5px #8C584D inset;
+  height: 220px;
+  left:-18px;
+  background: linear-gradient(0deg, rgba(152,68,183,1) 0%,#EC4C35 25%, #F2AB1D 51%, #E67F21 100%);
+  border-radius: 100%;
+  z-index: 3;
+  box-shadow:         inset 0 0 2px #5a3b0c44;
 
-  
+
 }
 
-.pot{
-  position: absolute;
-  left: 7px;
-  top:143px;
-  border-top: 100px solid #A0695B;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	height: 0px;
+.bump.left{
+ left: 70px;
+ width: 120px;
+ height: 200px;
+ z-index: 2;
+ box-shadow:         inset 0 0 2px #5a3b0c44;
+}
+
+.bump.right{
+  left: -50px;
+  width: 120px;
+  height: 200px;
+  z-index: 2;
+  box-shadow:         inset 0 0 2px #5a3b0c44;
+ }
+
+ .bump.three{
+   top: 45px;
+  left: -70px;
   width: 100px;
-  box-shadow: 0px 10px 15px -10px rgba(0, 0, 0, 0.6);
+  height: 120px;
+  z-index: 1;
+  box-shadow:         inset 0 0 8px #181717b4;
+ }
 
-}
+ .bump.four{
+  top: 45px;
+  left: 105px;
+  width: 100px;
+  height: 120px;
+  z-index: 1;
+  box-shadow:         inset 0 0 8px #181717b4;
+ }
 
-.spike{
+ .stem{
   position: absolute;
-  width: 0;
-  height: 0;
-  left: 0.5px;
-  top: 90px;
-  border-left: 7px solid transparent;
-  border-right:8px solid transparent;
-  border-top: 18px solid white;
-  transform: rotate(63deg);
-}
+  width: 15px;
+  height: 30px;
+  top:-20px;
+  left: 63px;
+  background: green;
+  z-index:1;
+  border-radius: 20%;
+  box-shadow:  inset 8px 6px -6px  black;
+ }
 
-.spike.two{
-  transform: rotate(-63deg);
-  left: 148px;
-  top: 90px;
-}
+ .dot{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top:20px;
+  left: 100px;
+  background: rgba(255, 255, 255, 0.904);
+  border-radius: 100%;
+  z-index:4;
+ }
 
-.spike.three{
-  transform: rotate(82deg);
-  left: -14.5px;
-  top: 40px;
-}
-
-.spike.four{
-  transform: rotate(-82deg);
-  left: 160px;
-  top: 40px;
-}
-
-.spike.five{
-  transform: rotate(100deg);
-  left: -13.5px;
-  top: -15px;
-}
-
-.spike.six{
-  transform: rotate(-100deg);
-  left: 159px;
-  top: -15px;
-}
-
-.spike.seven{
-  transform: rotate(130deg);
-  left: 10.5px;
-  top: -70px;
-}
-
-.spike.eight{
-  transform: rotate(-130deg);
-  left: 135px;
-  top: -70px;
-}
-
-.spike.nine{
-  transform: rotate(180deg);
-  left: 72.5px;
-  top: -98px;
-}
-
-.spike.ten{
-  left: 35px;
-  top: 100px;
-  transform: rotate(50deg);
-}
-
-.spike.ichi{
-  left: 111px;
-  top: 100px;
-  transform: rotate(-50deg);
-}
-
-.spike.ni{
-  left: 20px;
-  top: 56px;
-  transform: rotate(65deg);
-}
-
-.spike.san{
-  left: 127px;
-  top: 56px;
-  transform: rotate(-65deg);
-}
-
-.spike.shi{
-  left: 15px;
-  top: 8px;
-  transform: rotate(95deg);
-}
-
-.spike.go{
-  left: 132px;
-  top: 8px;
-  transform: rotate(-95deg);
-}
-
-.spike.roku{
-  left: 25px;
-  top: -45px;
-  transform: rotate(120deg);
-}
-
-.spike.nana{
+ .dot.two{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top:30px;
   left: 120px;
-  top: -45px;
-  transform: rotate(-120deg);
-}
-
-.spike.hachi{
-  transform: rotate(180deg);
-  left: 72.5px;
-  top: -70px;
-}
-
-.spike.kyu{
-  left: 72.5px;
-  top: 80px;
-  border-left: 7px solid transparent;
-  border-right:7px solid transparent;
-  border-top: 15px solid white;
-  transform: rotate(0deg);
-}
-
-.spike.jyu{
-  left: 72.5px;
-  top: 35px;
-  border-left: 7px solid transparent;
-  border-right:7px solid transparent;
-  border-top: 15px solid white;
-  transform: rotate(0deg);
-}
-
-.spike.jyuone{
-  left: 72.5px;
-  top: -15px;
-  border-left: 7px solid transparent;
-  border-right:7px solid transparent;
-  border-top: 15px solid white;
-  transform: rotate(0deg);
-}
+  background:  rgba(255, 255, 255, 0.904);
+  border-radius: 100%;
+  z-index:4;
+ }
